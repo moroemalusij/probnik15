@@ -1,0 +1,7 @@
+res = []
+for x in '0123456789ABCDEFGHIJK':
+    t = int('912' + x + '8745', 21) + int('791' + x + '065', 21)
+    if t % 20 == 0:
+        res.append(t)
+if res:
+    print(max(res) // 20)
